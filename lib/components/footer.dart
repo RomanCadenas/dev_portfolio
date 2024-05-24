@@ -7,7 +7,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: Color.fromARGB(255, 124, 33, 33),
       padding: const EdgeInsets.all(20.0),
       margin: const EdgeInsets.only(top: 20.0),
       child: const Column(
@@ -17,7 +17,7 @@ class Footer extends StatelessWidget {
             height: 10.0,
           ),
           Text(
-            "Jorge Román",
+            "Jorge Enrique Román Cadenas",
           ),
         ],
       ),

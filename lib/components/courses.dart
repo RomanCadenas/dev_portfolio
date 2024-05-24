@@ -15,11 +15,12 @@ class _CoursesState extends State<Courses> {
       margin: const EdgeInsets.only(
         top: 20.0,
       ),
-      width: context.screenWidth < 900
-          ? context.screenWidth * 0.9
-          : context.screenWidth < 1600
-              ? context.screenWidth * 0.5
-              : context.screenWidth * 0.4,
+      width: 500,
+      // context.screenWidth < 900
+      //     ? context.screenWidth * 0.9
+      //     : context.screenWidth < 1600
+      //         ? context.screenWidth * 0.5
+      //         : context.screenWidth * 0.4,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(
@@ -27,16 +28,16 @@ class _CoursesState extends State<Courses> {
         ),
       ),
       padding: const EdgeInsets.all(30.0),
-      height: 350.0,
+      height: 450.0,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
             "Educación",
             style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.w600,
-            ),
+                fontSize: 20.0,
+                fontWeight: FontWeight.w600,
+                color: Color.fromARGB(255, 0, 0, 0)),
           ),
           //
           const SizedBox(
@@ -60,36 +61,37 @@ class _CoursesState extends State<Courses> {
   Widget _eduCard(String anio, String titulo, String escuela, String otro) {
     return Card(
       child: Padding(
-        padding: EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
               anio,
               style: const TextStyle(
                 fontSize: 12.0,
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
             Text(
               titulo,
               style: const TextStyle(
-                fontSize: 20.0,
+                fontSize: 18.0,
                 fontWeight: FontWeight.w600,
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
             Text(
               escuela,
               style: const TextStyle(
-                fontSize: 18.0,
-                color: Colors.blueGrey,
+                fontSize: 16.0,
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
             Text(
               otro,
               style: const TextStyle(
-                fontSize: 14.0,
-                color: Colors.blueGrey,
+                fontSize: 12.0,
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
           ],

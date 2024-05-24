@@ -37,7 +37,7 @@ class _AnimatedContactState extends State<AnimatedContact> {
         duration: const Duration(milliseconds: 300),
         decoration: BoxDecoration(
           color: isHovering
-              ? Color.fromARGB(255, 75, 129, 199)
+              ? Color.fromARGB(255, 199, 75, 75)
               : Color.fromARGB(255, 51, 48, 48),
           borderRadius: BorderRadius.circular(
             12.0,
@@ -56,6 +56,7 @@ class _AnimatedContactState extends State<AnimatedContact> {
                 child: FaIcon(
                   widget.iconData,
                   size: 20.0,
+                  color: Colors.white,
                 ),
               ),
             ),

@@ -1,11 +1,9 @@
 import 'package:dev_portfolio/utils/animated_icon_button.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SocialRow extends StatelessWidget {
-  const SocialRow({Key? key}) : super(key: key);
+  const SocialRow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,21 +12,28 @@ class SocialRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         AnimatedIconButton(
-          iconData: FontAwesomeIcons.facebook,
+          iconData: FontAwesomeIcons.android,
           onTap: () {},
         ),
         const SizedBox(
           width: 8.0,
         ),
         AnimatedIconButton(
-          iconData: FontAwesomeIcons.instagram,
+          iconData: FontAwesomeIcons.apple,
           onTap: () {},
         ),
         const SizedBox(
           width: 8.0,
         ),
         AnimatedIconButton(
-          iconData: FontAwesomeIcons.twitter,
+          iconData: FontAwesomeIcons.microsoft,
+          onTap: () {},
+        ),
+        const SizedBox(
+          width: 8.0,
+        ),
+        AnimatedIconButton(
+          iconData: FontAwesomeIcons.linux,
           onTap: () {},
         ),
       ],

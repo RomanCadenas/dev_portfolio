@@ -29,7 +29,7 @@ class _AboutState extends State<About> {
         ),
       ),
       padding: const EdgeInsets.all(30.0),
-      height: 900.0,
+      height: 1250.0,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -39,13 +39,16 @@ class _AboutState extends State<About> {
                 "assets/dev.png",
                 height: 156.0,
               ),
+              const SizedBox(height: 20),
               const Text(
                 "Jorge Enrique Román Cadenas",
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w600,
+                  color: Colors.black,
                 ),
               ),
+              const SizedBox(height: 10),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8.0),
                 child: Text(
@@ -54,77 +57,46 @@ class _AboutState extends State<About> {
                   " equipos de trabajo, actualmente me he capacitado en nuevos frameworks y lenguajes de desarrollo de software, WebServices,"
                   " y desarrollo de Apps para dispositivos móviles.",
                   textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 15.0,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.black),
                 ),
               ),
-              // const Wrap(
-              //   alignment: WrapAlignment.center,
-              //   spacing: 8.0,
-              //   runSpacing: 8.0,
-              //   children: [
-              //     Chip(
-              //       label: Text(
-              //         "Trabajo en Equipo",
-              //       ),
-              //       labelStyle: TextStyle(
-              //         color: Colors.white,
-              //         fontSize: 14.0,
-              //       ),
-              //       backgroundColor: Colors.green,
-              //       padding: EdgeInsets.all(8.0),
-              //     ),
-              //     Chip(
-              //       label: Text(
-              //         "Liderazgo",
-              //       ),
-              //       labelStyle: TextStyle(
-              //         color: Colors.white,
-              //         fontSize: 14.0,
-              //       ),
-              //       backgroundColor: Colors.green,
-              //       padding: EdgeInsets.all(8.0),
-              //     ),
-              //     Chip(
-              //       label: Text(
-              //         "Desarrollo Web/Movil",
-              //       ),
-              //       labelStyle: TextStyle(
-              //         color: Colors.white,
-              //         fontSize: 14.0,
-              //       ),
-              //       backgroundColor: Colors.green,
-              //       padding: EdgeInsets.all(8.0),
-              //     ),
-              //   ],
-              // ),
-              //
+              const SizedBox(height: 20),
+
               const Divider(),
               const Text(
                 "Contacto",
                 style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w600,
+                  color: Colors.black,
                 ),
               ),
-              //
+              const SizedBox(height: 50),
               AnimatedContact(
                   iconData: FontAwesomeIcons.whatsapp,
                   title: "WhatsApp",
                   subtitle: "9615792317",
                   url:
-                      'https://wa.me/9615792317?text=He%20visto%20tu%20curriculum%20y%20me%20gustaría%20contactarte',
+                      'https://wa.me/529615792317?text=He%20visto%20tu%20curriculum%20y%20me%20gustaría%20contactarte',
                   onTap: () {}),
+              const SizedBox(height: 50),
               AnimatedContact(
                   iconData: FontAwesomeIcons.google,
                   title: "Gmail",
                   subtitle: "romancadenas@gmail.com",
                   url: 'mailto:romancadenas@gmail.com',
                   onTap: () {}),
+              const SizedBox(height: 50),
               AnimatedContact(
                   iconData: FontAwesomeIcons.github,
                   title: "Github",
                   subtitle: "/RomanCadenas",
                   url: 'https://github.com/RomanCadenas',
                   onTap: () {}),
+              const SizedBox(height: 50),
               AnimatedContact(
                   iconData: FontAwesomeIcons.linkedin,
                   title: "Linkedin",
